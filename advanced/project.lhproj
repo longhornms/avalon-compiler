@@ -25,13 +25,6 @@
 			<File RelTargetDir="" SourcePath="page.xaml" Action="" Certificate=""/>
 			<File RelTargetDir="" SourcePath="home.xaml" Action="" Certificate=""/>
 		</AppCompileUnit>
-		
-		<!--
-		<CompileUnit Name="AnotherAvalonApp">
-			<File RelTargetDir="" SourcePath="home.xaml" Action="" Certificate=""/>
-		</CompileUnit>
-		<File RelPath="" SourcePath="Winter.jpg"/>
-		-->
 	</Files>
 	<PostBuild>
 		<Step AssemblyName="" ClassName="" MethodName="">
@@ -40,30 +33,3 @@
 	</PostBuild>
 	
 </ApplicationProject>
-
-
-<!-- 
-PackageType
-	*exe
-	*container
-	*multifile
-	
-Optimization
-	*download = generate BAML 
-	*executionspeed
-	
-Security sets ThemeParkExe bool. ThemeParkExe provides a 'secure stub executable'
-
-Only xaml files are supported in the AppCompileUnit
-RelPath attribute on File element is deprecated - use SourcePath
-
-Action 
-	*Encrypt = needs DRM Client SDK to function
-	*Compress = not supported yet
-	*Sign = sings application with given Certificate in Settings element
-EncryptData is a loction for encrypted data
-
-
-
-
--->
