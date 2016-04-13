@@ -1,0 +1,2 @@
+<NavigationApplication xmlns="using:System.Windows;System.Windows.Navigation" StartupPage="page.xaml">
+</NavigationApplication>

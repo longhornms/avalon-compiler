@@ -1,0 +1,8 @@
+<NavigationApplication 
+	xmlns="using:System.Windows;System.Windows.Navigation" 
+	xmlns:def="Definition" 
+	def:Language="C#" 
+	def:Class="MyNamespace.Application"
+	Name="Longhorn.ms"
+	StartupPage="home.xaml">
+</NavigationApplication>

@@ -1,0 +1,23 @@
+<ApplicationProject>
+	<Build>
+		<Settings 
+		Version="1.0.0.0"
+		HostInBrowser="false"
+		Security="true" 
+		eDocument="false"
+		Certificate=""
+		DebugInfo="false"
+		OutputPath=""
+		PackageType="exe" 
+		Optimization="executionspeed" 
+		/>
+	</Build>
+	<Metadata>
+		Application summary
+	</Metadata>
+	<Files>
+		<AppCompileUnit Name="AvalonApplication" Description="Avalon application - Longhorn.ms" Action="" EncryptData="" >
+			<File RelPath="" SourcePath="page.xaml"/>
+		</AppCompileUnit>
+	</Files>
+</ApplicationProject>

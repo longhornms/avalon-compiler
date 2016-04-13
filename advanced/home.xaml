@@ -1,0 +1,25 @@
+<DockPanel xmlns="using:System;System.Windows;System.Windows.Forms;System.Windows.Presenters;System.Windows.Shapes;System.Windows.Controls;System.Windows.Documents" 
+		xmlns:def="Definition" 
+		def:Language="C#" 
+		def:Class="MyNamespace.Home"
+		Background="Purple">
+	<FlowPanel Background="darkGray" Dock="Top" Height="12%">
+		<Text Margin="10,10,10,0" Foreground="White">Welcome to this Avalon application. Type something in the textbox.</Text>
+		<TextBox Height="20px" Margin="0,10,0,0" Width="80px" ID="TextBox1"/>
+		<Button Margin="10,10,10,0" Canvas.Left="100px" ID="Button1" Click="HandleClick">Click me!</Button>
+		<Button Margin="10,10,10,0" Canvas.Left="200px" ID="Button2" Click="ResetClick">Reset</Button>
+		<Text Margin="10,0,0,0" Foreground="White">Click the button to print your text in this form.</Text>	
+		<HyperLink NavigateUrl="page.xaml">Click here to navigate to page.xaml</HyperLink>
+	</FlowPanel>
+	<Canvas Height="100%" Width="100%" ID="Message1">
+		<PropertySheet>
+			Text[ID="TextArea"]
+			{
+				Foreground="#ffffff"
+				FontSize="22pt"
+			}
+		</PropertySheet>
+		<Text ID="TextArea"/>
+	</Canvas>		
+	<def:Source Source="home.xaml.cs"/>
+</DockPanel>

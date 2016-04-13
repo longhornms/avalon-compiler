@@ -1,0 +1,69 @@
+<ApplicationProject>
+	<Build>
+		<Settings 
+		Version="1.0.0.0"
+		HostInBrowser="true"
+		Security=""
+		eDocument="true"
+		Certificate=""
+		DebugInfo="true"
+		OutputPath=""
+		PackageType="exe" 
+		Optimization="executionspeed" 
+		/>
+		<References>
+			<!-- Add WinForms for some legacy support -->
+			<Reference AssemblyName="System.Windows.Forms" AssemblyPath="C:\Windows\Microsoft.NET\Framework\v1.1.4322\" />
+		</References>
+	</Build>
+	<Metadata>
+		<SummaryInformation>Summary</SummaryInformation>
+		<DocumentSummaryInformation>Document Summary</DocumentSummaryInformation>
+	</Metadata>
+	<Files>
+		<AppCompileUnit Name="AvalonApplication" Description="Avalon application - Longhorn.ms" Action="" EncryptData="" >
+			<File RelTargetDir="" SourcePath="page.xaml" Action="" Certificate=""/>
+			<File RelTargetDir="" SourcePath="home.xaml" Action="" Certificate=""/>
+		</AppCompileUnit>
+		
+		<!--
+		<CompileUnit Name="AnotherAvalonApp">
+			<File RelTargetDir="" SourcePath="home.xaml" Action="" Certificate=""/>
+		</CompileUnit>
+		<File RelPath="" SourcePath="Winter.jpg"/>
+		-->
+	</Files>
+	<PostBuild>
+		<Step AssemblyName="" ClassName="" MethodName="">
+			<Data>Raw data for PostBuildStep object</Data>
+		</Step>
+	</PostBuild>
+	
+</ApplicationProject>
+
+
+<!-- 
+PackageType
+	*exe
+	*container
+	*multifile
+	
+Optimization
+	*download = generate BAML 
+	*executionspeed
+	
+Security sets ThemeParkExe bool. ThemeParkExe provides a 'secure stub executable'
+
+Only xaml files are supported in the AppCompileUnit
+RelPath attribute on File element is deprecated - use SourcePath
+
+Action 
+	*Encrypt = needs DRM Client SDK to function
+	*Compress = not supported yet
+	*Sign = sings application with given Certificate in Settings element
+EncryptData is a loction for encrypted data
+
+
+
+
+-->

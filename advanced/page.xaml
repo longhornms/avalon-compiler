@@ -1,0 +1,15 @@
+<DockPanel xmlns="using:System;System.Windows;System.Windows.Presenters;System.Windows.Shapes;System.Windows.Controls;System.Windows.Documents"
+ xmlns:def="Definition" 
+ Background="Purple">
+	<Canvas Height="100%" Width="100%" ID="Message1">
+		<PropertySheet>
+			Text[ID="TextArea"]
+			{
+				Foreground="#ffffff"
+				FontSize="22pt"
+			}
+		</PropertySheet>
+		<Text ID="TextArea">This is page.xaml</Text>
+		<HyperLink NavigateUrl="home.xaml">Go back to home</HyperLink>
+	</Canvas>	
+</DockPanel>
